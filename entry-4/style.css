@@ -1,0 +1,69 @@
+body{background-color:lightblue;}
+h1{display: grid;
+    place-items: center; 
+    height: 15vh;      
+    margin: 0; 
+  font-family:Arial;
+  color:#D2B48C
+  
+}
+/* EXAMPLE 5 */
+
+.hello-goodbye{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  width:300px;
+  padding:20px;
+  text-align:center;
+  
+  
+  
+}
+
+.hello-goodbye h2{
+  margin:0px;
+  color:white;
+  font-weight:normal;
+  font-style:Arial;
+  display: flex;
+  display: grid;
+    place-items: center; 
+ 
+}
+
+.hello-goodbye #goodbye{
+  display:none;
+}
+
+.hello-goodbye:hover #goodbye{
+  display:block;
+}
+
+.hello-goodbye:hover #hello{
+  display:none;
+  
+}
+body {
+            display: flex;              /* Use Flexbox to center content */
+            justify-content: center;    /* Center horizontally */
+            align-items: center;        /* Center vertically */
+            height: 100vh;             /* Full height of the viewport */
+            margin: 0;                 /* Remove default margin */
+        }
+
+
+.image-hover {
+    width: 300px; 
+    height: 600px; 
+  border: 5px; solid #0000; 
+    border-radius: 10px;
+  
+    background-image: url('https://i.etsystatic.com/33708229/r/il/a109bb/3727277343/il_570xN.3727277343_7g8z.jpg'); 
+    background-size: cover; 
+    transition: background-image 0.5s ease-in-out; 
+}
+
+.image-hover:hover {
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA1L2hpcHBvdW5pY29ybl9iZWFjaF93aXRoX2xlYWZfcGxhbnRfc2hhZG93X2JlYWNoX3dhbGxwYXBlcl9iYWNrZ180ZjA1YzBlMy0zZWI0LTRmYjYtYjMzYS1iNGM5YjIyYmVlNjZfMS5qcGc.jpg'); 
+}
+
