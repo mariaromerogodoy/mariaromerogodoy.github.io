@@ -1,0 +1,73 @@
+body {
+    background-color: lightgreen;
+    margin: 0; 
+}
+
+.container {
+    display: flex; 
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    font-family: Arial;
+    color: brown;
+    font-size: 50px; 
+    transition: font-size 0.7s ease; 
+    text-align: center; 
+}
+
+h1:hover {
+    font-size: 60px; 
+    text-transform: uppercase;
+}
+
+.circle {
+    width: 130px; 
+    height: 130px; 
+    background-color: #556B2F; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.circle:hover {
+    width: 160px; 
+    height: 160px; 
+    background-color: #98FB98; 
+    transition: 0.7s ease; /* Smooth transition */
+}
+
+.circle-text {
+    color: white; 
+    font-size: 40px; 
+    text-align: center; 
+}
+
+.par {
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 20px 0; /* Add some spacing above and below */
+}
+
+.image-hover {
+    width: 300px; 
+    height: 200px; 
+    border-radius: 10px; 
+    background-image: url('https://i.redd.it/nfob8zydnkq91.jpg'); 
+    background-size: cover; 
+    transition: background-image 0.5s ease-in-out; 
+    margin-top: 20px; /* Space above the image */
+}
+
+.image-hover:hover {
+    background-image: url('https://cdn.shopify.com/s/files/1/0577/1971/7922/files/top_10_hard_to_kill_plants_1.jpg'); 
+}
+.pot {
+  font-family:arial
+    
+}
