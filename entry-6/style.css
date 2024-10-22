@@ -1,0 +1,227 @@
+body {
+    background-color: BurlyWood;
+    margin: 0; 
+}
+h1{
+  font-family: Arial;
+ color:ivory;
+  font-size: 50px; 
+    transition: font-size 0.7s ease; 
+    text-align: center;
+}
+h1:hover {
+  font-family: Arial;
+  font-size: 80px; 
+    transition: font-size 0.7s ease; 
+    text-align: center;
+}
+.container {
+  border: 10px solid #ccc;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  font-family:arial;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  line-height: 100px; 
+  color: white; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.yes {
+  background-color: violet; 
+}
+.yes:hover {background-color: green;
+width: 120px; 
+  height: 120px; 
+transition: 0.3s ease;}
+
+.no {
+  background-color: violet; 
+}
+.no:hover {
+  background-color: red;
+width: 120px; 
+  height: 120px; 
+  transition: 0.3s ease;}
+.container {
+  border: 10px solid #ccc;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  font-family:arial;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  line-height: 100px; 
+  color: white; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.yes {
+  background-color: violet; 
+}
+.yes:hover {background-color: red;
+width: 120px; 
+  height: 120px; 
+transition: 0.3s ease;}
+
+.no {
+  background-color: violet; 
+}
+.no:hover {
+  background-color: green;
+width: 120px; 
+  height: 120px; 
+  transition: 0.3s ease;}
+.container {
+  border: 10px solid #ccc;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  font-family:arial;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  line-height: 100px; 
+  color: white; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.yes {
+  background-color: violet; 
+}
+.yes:hover {background-color: green;
+width: 120px; 
+  height: 120px; 
+transition: 0.3s ease;}
+
+.no {
+  background-color: violet; 
+}
+.no:hover {
+  background-color: red;
+width: 120px; 
+  height: 120px; 
+  transition: 0.3s ease;}
+.container {
+  border: 10px solid #ccc;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  font-family:arial;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  line-height: 100px; 
+  color: white; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.yes {
+  background-color: violet; 
+}
+.yes:hover {background-color: green;
+width: 120px; 
+  height: 120px; 
+transition: 0.3s ease;}
+
+.no {
+  background-color: violet; 
+}
+.no:hover {
+  background-color: red;
+width: 120px; 
+  height: 120px; 
+  transition: 0.3s ease;}
+.container {
+  border: 10px solid #ccc;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  font-family:arial;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  line-height: 100px; 
+  color: white; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.yes {
+  background-color: violet; 
+}
+.yes:hover {background-color: red;
+width: 120px; 
+  height: 120px; 
+transition: 0.3s ease;}
+
+.no {
+  background-color: violet; 
+}
+.no:hover {
+  background-color: green;
+width: 120px; 
+  height: 120px; 
+  transition: 0.3s ease;}
+.container {
+  border: 10px solid #808000;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  font-family:arial;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  line-height: 100px; 
+  color: white; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.yes {
+  background-color: violet; 
+}
+.yes:hover {background-color: red;
+width: 120px; 
+  height: 120px; 
+transition: 0.3s ease;}
+
+.no {
+  background-color: violet; 
+}
+.no:hover {
+  background-color: green;
+width: 120px; 
+  height: 120px; 
+  transition: 0.3s ease;}
