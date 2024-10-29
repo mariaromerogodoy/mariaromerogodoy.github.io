@@ -1,10 +1,10 @@
 body {
-    background-color: BurlyWood;
+    background-color: floralwhite;
     margin: 0; 
 }
 h1{
   font-family: Arial;
- color:ivory;
+ color:darkolivegreen;
   font-size: 50px; 
     transition: font-size 0.7s ease; 
     text-align: center;
