@@ -163,4 +163,8 @@ h1 { color: sienna;
   z-index: -1; */
   clip-path: inherit; 
 }
-
+.star:hover {
+    height: 250px;
+    width: 250px;
+    transition: 0.3s ease;
+  }
