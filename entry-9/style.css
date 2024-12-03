@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    font-family:arial;
+    font-family: Arial;
+   color:darkgreen;
+    font-size: 80px;
+  }
+  
+  h1:hover {
+    font-family: Arial;
+    font-size: 120px; 
+      transition: font-size 0.7s ease; 
+      text-align: center;
+  }
+  .container {
+    border: 6px solid #556B2F;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    font-family:arial;
+    width: 100%;
+      margin-left: 10px;
+  }
+  .container:hover {
+    border: 6px solid #556B2F;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin-left: 10px;
+    background-image: url("https://cdn.britannica.com/87/138787-050-33727493/Belovezhskaya-Forest-Poland.jpg");
+    background-size: cover; 
+    background-position: center; 
+  }
