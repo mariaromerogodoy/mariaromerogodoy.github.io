@@ -8,6 +8,6 @@ window.onload = function() {
       //<div id="0-8"></div>
       let tile = document.createElement("div");
       title.id = i.toString();
-      document.getElementById("board").appendChild(title);
+      document.getElementById("board").appendChild(tile);
     }
   }
