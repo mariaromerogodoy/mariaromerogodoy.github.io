@@ -21,6 +21,6 @@ body {
     /*board = 540x540, divide into 3x3 tile --> 180x180 per div*/
     width: 180px;
     height: 180px;
-    background-image: url(:https://static.vecteezy.com/system/resources/previews/006/716/500/non_2x/cute-cartoon-doodle-empty-flowerpot-isolated-on-white-background-sketch-of-a-vase-vector.jpg);
+    background-image: url(base.png);
     background-size: cover;
   }
