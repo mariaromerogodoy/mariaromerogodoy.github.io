@@ -31,7 +31,7 @@ function getRandomTile() {
     }
     
     let mole = document.createElement("img");
-    mole.src = "./mole.png";
+    mole.src = "../mole.png";
 
     let num = getRandomTile();
     currMoleTile = document.getElementById(num);
@@ -44,7 +44,7 @@ function setPlant() {
     currPlantTile.innerHTML = "";
   }
   let plant = document.createElement("img");
-  plant.src = " ./flower.png"
+  plant.src = " ../flower.png"
 
   let num = getRandomTile()
   currPlantTile = document.getElementById(num);
