@@ -1,0 +1,72 @@
+body {
+    background-color:lightblue;
+  }
+  H1 {
+    font-family: Arial;
+   color:navyblue;
+    font-size: 80px; 
+      transition: font-size 0.7s ease; 
+      text-align: center;
+    
+  } 
+  h1:hover {
+    font-family: Arial;
+    font-size: 120px; 
+      transition: font-size 0.7s ease; 
+      text-align: center;
+  }
+  
+  p {
+    font-family: Arial;
+    text-align: left;
+    width: 98%;
+      margin-left: 10px;
+  }
+  .container {
+    border: 6px solid #4682B4;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    font-family:arial;
+    width: 67%;
+      margin-left: 10px;
+  }
+  .container:hover {
+    border: 6px solid #4682B4F;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    font-family:arial;
+    width: 67%;
+      margin-left: 10px;
+    background-color:white;
+  }
+  
+  #facts-container {
+      position: fixed;
+      right: 10px;
+      top: 100px;
+      width: 250px;
+      padding: 20px;
+      background-color: #556B2F;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: white;
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Button styling */
+  #new-fact-button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: lightblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  #new-fact-button:hover {
+      background-color: #45a049;
+  }
+  
