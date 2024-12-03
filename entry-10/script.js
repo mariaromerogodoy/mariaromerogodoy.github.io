@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Array of sample plant facts
+    
     const plantFacts = [
         "Water freezes at 32°F (0°C)",
         "TThe winter solstice is the shortest day of the year in the Northern Hemisphere, and it occurs on December 21st.",
