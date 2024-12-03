@@ -17,3 +17,10 @@ body {
     border: 3px solid white;
     border-radius: 25px;
   }
+  #board div {
+    /*board = 540x540, divide into 3x3 tile --> 180x180 per div*/
+    width: 180px;
+    height: 180px;
+    background-image: url(:///Users/mariaromero/Desktop/my%20pictures/base.png;);
+    background-size: cover;
+  }
