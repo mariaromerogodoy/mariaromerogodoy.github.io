@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; background:url("https://static.vecteezy.com/system/resources/previews/014/572/097/non_2x/background-of-green-grass-field-cartoon-drawing-free-vector.jpg");
+    background-size: cover;
+  }
+  
+  #board {
+    width:540px;
+    height:540px;
+    background-color: green;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background:url("https://img.freepik.com/free-vector/brown-soil-texture-background_1308-20483.jpg?semt=ais_hybrid");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+  }
