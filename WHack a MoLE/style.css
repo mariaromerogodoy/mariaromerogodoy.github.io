@@ -19,8 +19,8 @@ body {
   }
   #board div {
     /*board = 540x540, divide into 3x3 tile --> 180x180 per div*/
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     background-image: url(../vase.png);
     background-size: cover;
   }
