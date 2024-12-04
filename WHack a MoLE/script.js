@@ -25,7 +25,7 @@ function getRandomTile() {
     return num.toString();
 }
   function setMole() {
-    
+    let currMoleTile = null;
     if (currMoleTile){
       currMoleTile.innerHTML = "";
     }
