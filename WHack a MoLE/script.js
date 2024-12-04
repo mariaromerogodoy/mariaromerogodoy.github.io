@@ -1,20 +1,15 @@
 let currMoleTile;
 let currPlantTile;
-letscore = 0;
-let gameOver = false;
 
-window.onload = function() {
-    setGame();
-  }
+
+
+ 
   
   function setGame() {
     //set up the grid for the game board in html
     for (let i = 0; i < 9; i++) { //i goes from 0 to 8, stops at 9
       //<div id="0-8"></div>
-      let tile = document.createElement("div");
-      tile.id = i.toString();
-      tile.addEventListener("click" , select)
-      document.getElementById("board").appendChild(tile);
+      
     }
 
     setInterval(setMole, 1000); //1000 milliseconds = 1 seconds
@@ -58,15 +53,4 @@ function setPlant() {
   }
   currPlantTile = document.getElementById(num);
   currPlantTile.appendChild(plant); 
-}
-function selectTile () {
-
-  if (this == currMoleTile) {
-    score += 10;
-    document.getElementById("score").innerText = score.toString(); //update score
-  }
-  else if (this == currPlantTile) {
-    document.getElementById("score").innerText = "GAME OVER" + Score.toString();
-    gameOver = true;
-  }
 }
