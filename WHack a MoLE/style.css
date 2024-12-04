@@ -22,7 +22,7 @@ body {
     width: 180px;
     height: 180px;
     background-image: url(../vase.png);
-    background-size: width:120px; height:120px;
+    background-size: cover
   }
 
   #board div img {
