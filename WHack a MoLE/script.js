@@ -70,4 +70,4 @@ function selectTile () {
     document.getElementById("score").innerText = "GAME OVER" + Score.toString();
     gameOver = true;
   }
-})
+}
