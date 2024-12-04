@@ -1,6 +1,7 @@
 let currMoleTile;
 let currPlantTile;
-
+letscore = 0;
+let gameOver = false;
 
 window.onload = function() {
     setGame();
@@ -12,7 +13,7 @@ window.onload = function() {
       //<div id="0-8"></div>
       let tile = document.createElement("div");
       tile.id = i.toString();
-      tile.addEventListener("click", selectTile)
+      tile.addEventListener("click" , select)
       document.getElementById("board").appendChild(tile);
     }
 
@@ -58,4 +59,14 @@ function setPlant() {
   currPlantTile = document.getElementById(num);
   currPlantTile.appendChild(plant); 
 }
+function selectTile () {
 
+  if (this == currMoleTile) {
+    score += 10;
+    document.getElementById("score").innerText = score.toString(); //update score
+  }
+  else if (this == currPlantTile) {
+    document.getElementById("score").innerText = "GAME OVER" + Score.toString();
+    gameOver = true;
+  }
+}
