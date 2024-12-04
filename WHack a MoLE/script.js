@@ -34,6 +34,9 @@ function getRandomTile() {
     mole.src = "../mole.png";
 
     let num = getRandomTile();
+    if (currPlantTile && currPlantTile.id == num) {
+      return;
+    }
     currMoleTile = document.getElementById(num);
     currMoleTile.appendChild(mole);
   }
@@ -47,6 +50,9 @@ function setPlant() {
   plant.src = " ../flower.png"
 
   let num = getRandomTile()
+  if (currMoleTile && currMoleTile.id == num) {
+    return;
+  }
   currPlantTile = document.getElementById(num);
   currPlantTile.appendChild(plant); 
 }
