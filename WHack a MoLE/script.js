@@ -1,7 +1,6 @@
 let currMoleTile;
 let currPlantTile;
 
-
 window.onload = function() {
     setGame();
   }
@@ -14,9 +13,7 @@ window.onload = function() {
       tile.id = i.toString();
       document.getElementById("board").appendChild(tile);
     }
-
-    setInterval(setMole, 1000); //1000 milliseconds = 1 seconds
-    setInterval(setPlant, 2000); //2000 milliseconds = 2 seconds
+    setInterval(setMole, 2000); //2000 milliseconds = 2 seconds
   }
 
 
@@ -32,12 +29,9 @@ function getRandomTile() {
     }
     
     let mole = document.createElement("img");
-    mole.src = "../mole.png";
+    mole.src = " ../mole.png";
 
     let num = getRandomTile();
-    if (currPlantTile && currPlantTile.id == num) {
-      return;
-    }
     currMoleTile = document.getElementById(num);
     currMoleTile.appendChild(mole);
   }
@@ -48,12 +42,5 @@ function setPlant() {
     currPlantTile.innerHTML = "";
   }
   let plant = document.createElement("img");
-  plant.src = " ../flower.png"
-
-  let num = getRandomTile()
-  if (currMoleTile && currMoleTile.id == num) {
-    return;
-  }
-  currPlantTile = document.getElementById(num);
-  currPlantTile.appendChild(plant); 
+  plant.src = " ../flower-"
 }
