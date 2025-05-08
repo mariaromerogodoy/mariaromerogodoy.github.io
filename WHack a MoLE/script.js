@@ -60,7 +60,7 @@ function selectTile() {
         document.getElementById("score").innerText = "You hurt the coral :( " + score.toString();
         gameOver = true;
 
-        // SHOW the restart button with smooth fade-in
+       
         const restartButton = document.getElementById('restartButton');
         restartButton.classList.add('show');
     }
@@ -69,23 +69,23 @@ function selectTile() {
 function initializeGame() {
     console.log("Game Restarted");
 
-    // Hide the restart button again
+
     const restartButton = document.getElementById('restartButton');
     restartButton.classList.remove('show');
 
-    // Clear board
+
     for (let i = 0; i < 9; i++) {
         document.getElementById(i.toString()).innerHTML = "";
     }
 
-    // Reset variables
+    
     currMoleTile = null;
     currPlantTile = null;
     score = 0;
     gameOver = false;
     document.getElementById("score").innerText = score.toString();
 
-    // Reset intervals
+
     clearInterval(moleInterval);
     clearInterval(plantInterval);
     moleInterval = setInterval(setMole, 1000);
