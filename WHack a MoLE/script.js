@@ -1,66 +1,93 @@
 let currMoleTile;
 let currPlantTile;
+let score = 0;
+let gameOver = false;
+let moleInterval;
+let plantInterval;
 
 window.onload = function() {
     setGame();
+
+    const restartButton = document.getElementById('restartButton');
+    restartButton.addEventListener('click', initializeGame);
 }
 
 function setGame() {
-    // Set up the grid for the game board in HTML
-    for (let i = 0; i < 9; i++) { // i goes from 0 to 8, stops at 9
+    for (let i = 0; i < 9; i++) {
         let tile = document.createElement("div");
         tile.id = i.toString();
-        tile.classList.add("tile"); // Add a class for styling
+        tile.addEventListener("click", selectTile);
         document.getElementById("board").appendChild(tile);
     }
-
-    // Place mole every second and plant every 2 seconds
-    setInterval(setMole, 1000); // 1000 milliseconds = 1 second
-    setInterval(setPlant, 2000); // 2000 milliseconds = 2 seconds
+    moleInterval = setInterval(setMole, 1000);
+    plantInterval = setInterval(setPlant, 2000);
 }
 
 function getRandomTile() {
-    // Randomly select a tile between 0 and 8
     let num = Math.floor(Math.random() * 9);
     return num.toString();
 }
 
 function setMole() {
-    // Only change mole position if there's no existing mole
-    if (currMoleTile) {
-        currMoleTile.innerHTML = ""; // Remove the mole from previous tile
-    }
-
+    if (gameOver) return;
+    if (currMoleTile) currMoleTile.innerHTML = "";
     let mole = document.createElement("img");
-    mole.src = "../mole.png"; // Correct path to your mole image
-
+    mole.src = "../coffee/shell.png";
     let num = getRandomTile();
-    
-    // Prevent mole from appearing on the same tile as the plant
-    if (currPlantTile && currPlantTile.id === num) {
-        return; // If the mole and plant would overlap, don't place the mole
-    }
-
-    currMoleTile = document.getElementById(num); // Get the tile to place the mole
-    currMoleTile.appendChild(mole); // Place mole in the selected tile
+    if (currPlantTile && currPlantTile.id == num) return;
+    currMoleTile = document.getElementById(num);
+    currMoleTile.appendChild(mole);
 }
 
 function setPlant() {
-    // Only change plant position if there's no existing plant
-    if (currPlantTile) {
-        currPlantTile.innerHTML = ""; // Remove the plant from the previous tile
-    }
-
+    if (gameOver) return;
+    if (currPlantTile) currPlantTile.innerHTML = "";
     let plant = document.createElement("img");
-    plant.src = "../flower.png"; // Correct path to your flower image
-
+    plant.src = "../coffee/coral.png";
     let num = getRandomTile();
-    
-    // Prevent plant from appearing on the same tile as the mole
-    if (currMoleTile && currMoleTile.id === num) {
-        return; // If the mole and plant would overlap, don't place the plant
+    if (currMoleTile && currMoleTile.id == num) return;
+    currPlantTile = document.getElementById(num);
+    currPlantTile.appendChild(plant);
+}
+
+function selectTile() {
+    if (gameOver) return;
+
+    if (this == currMoleTile) {
+        score += 10;
+        document.getElementById("score").innerText = score.toString();
+    } else if (this == currPlantTile) {
+        document.getElementById("score").innerText = "You hurt the coral :( " + score.toString();
+        gameOver = true;
+
+        // SHOW the restart button with smooth fade-in
+        const restartButton = document.getElementById('restartButton');
+        restartButton.classList.add('show');
+    }
+}
+
+function initializeGame() {
+    console.log("Game Restarted");
+
+    // Hide the restart button again
+    const restartButton = document.getElementById('restartButton');
+    restartButton.classList.remove('show');
+
+    // Clear board
+    for (let i = 0; i < 9; i++) {
+        document.getElementById(i.toString()).innerHTML = "";
     }
 
-    currPlantTile = document.getElementById(num); // Get the tile to place the plant
-    currPlantTile.appendChild(plant); // Place plant in the selected tile
+    // Reset variables
+    currMoleTile = null;
+    currPlantTile = null;
+    score = 0;
+    gameOver = false;
+    document.getElementById("score").innerText = score.toString();
+
+    // Reset intervals
+    clearInterval(moleInterval);
+    clearInterval(plantInterval);
+    moleInterval = setInterval(setMole, 1000);
+    plantInterval = setInterval(setPlant, 2000);
 }
